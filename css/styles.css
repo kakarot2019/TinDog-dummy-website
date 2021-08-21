@@ -1,0 +1,191 @@
+/*sab kuch bana lene ke baad thora decorate kardo for better readability*/
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+/*----------Navigation----------*/
+
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: 150;
+    font-family: 'ubuntu';
+}
+
+.navbar{
+    padding-bottom: 1.5rem;
+    padding-left: 0;
+}
+
+.nav-item{
+    text-align: center; /*toggle ke andar align*/
+    padding: 0 18px;
+}
+
+/*---------Front--------------*/
+
+#title{
+    background-color: #ff4c88; /*pura section ka color hai*/
+    color: white;
+}
+
+#title.container{
+    padding: 1% 10%;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.head{
+    padding-top: 2rem;
+    padding-bottom: 4%;
+}
+
+.hbtn{
+    margin: 5% 3% 5% 0;
+}
+
+.himg{
+    width: 60%;
+    display: inline-block;
+    padding-top: 4%;
+    
+    transform: rotate(30deg);
+    position: absolute;   /*kata phone ka design ke liye */
+    left: 100px;
+}
+.fab{
+    padding-right: 1.1rem;
+}
+
+/*------Features----------*/
+#features{
+    background-color: white; /*color isliye qki piche aadha phone hai usko hide krne ke liye*/
+    position: relative; /*refer z index wala video... position change krna parta hai isme*/
+}
+.ficon{
+    color: red;
+    font-size: 5rem;
+    text-align: center;
+    margin: 5% 0;
+    padding: 0 10%;
+}
+.ficon:hover{
+    color: rgb(247, 193, 193);
+}
+
+.fcol{
+    margin: 15% 0;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Montserrat-black', sans-serif;
+    font-weight: 3000;
+}
+p{
+    color: grey;
+}
+
+/*----------Testimonials--------*/
+#testimonials{
+    text-align: center;
+    background-color: #ef4f4f;
+    margin: 5% 0 0 0;
+    outline: 0px; !important
+}
+h2.testimonial-text{
+    padding: 3% 15% 0 15%;
+    color: white;
+}
+.timg{
+    margin: 5% 0 5% 5%;
+    width: 15%;
+}
+
+/*--------press----------*/
+#press{
+    background-color: #ef4f4f;
+    text-align: center;
+    padding-bottom: 5%;
+}
+#press img{
+    width: 15%;
+    margin: 0 4%;
+}
+
+
+/*---------Pricing----------*/
+#pricing{
+    padding: 7%;
+    text-align: center;
+}
+
+.phead{
+    font-family: 'Montserrat', sans-serif;
+}
+.card{
+    border: none;
+    padding: 1% 5%;
+    
+}
+
+/*---------cta---------*/
+#cta{
+    background-color: #ef4f4f;
+    text-align: center;
+    padding:3% 2% ;
+}
+.ctahead{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: white;
+    margin: 2% 0 3% 0;
+}
+/*-----------footer-----------*/
+#footer{
+    text-align: center;
+    padding: 7% 0 2% 0;
+    background-color:#e8eae6;
+}
+#footer p{
+    margin-top: 2%;
+    margin-bottom: 10px;
+}
+/*----------media-----------*/
+@media (max-width: 990px) and (min-width: 765px){
+    .title{
+        text-align: center;
+    }
+    .himg{
+        position: static;
+        transform: rotate(0deg);
+        display: inline-block;
+        float: right;
+        width: 80%;
+        margin-top: 30%;
+        
+    }
+}
+
+@media (max-width: 765px){
+    .title{
+        text-align: center;
+    }
+    .himg{
+        position: static;
+        transform: rotate(0deg);
+    }
+    .fcol{
+        margin: 3% 0;
+    }
+    .testimonial-text{
+        font-size: 1.5rem;
+    }
+    .ctahead{
+        font-size: 1.5rem;
+    }
+}
